@@ -3,7 +3,7 @@
   "name":"NoClanker",
   "version":"1.0",
   "description":"Blocks many of the LLM websites, entire list of blocked LLM websites can be accessed at linkhere",
-  "authors":"NSS"
+  "authors":"NSS",
   "permissions":[
     "webRequest",
     "webRequestBlocking",
