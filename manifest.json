@@ -1,8 +1,8 @@
 {
   "manifest_version":3,
   "name":"NoClanker",
-  "version":"1.0",
-  "description":"Blocks many of the LLM websites, entire list of blocked LLM websites can be accessed at linkhere",
+  "version":"0.1.0",
+  "description":"Blocks LLM providers to regain your focus!",
   "author":"NSS",
   "permissions":[
     "webRequest",
@@ -12,7 +12,7 @@
     "*://*/*"
   ],
   "background":{
-    "scripts":["background.js"]
+    "service_worker":"background.js"
   },
   "web_accessible_resources":[
     {
