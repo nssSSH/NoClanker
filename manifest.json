@@ -3,7 +3,7 @@
   "name":"NoClanker",
   "version":"0.1.0",
   "description":"Blocks LLM providers to regain your focus!",
-  "author":"NSS",
+  "author":"Abhishek",
   "permissions":[
     "webRequest",
     "webRequestBlocking"
