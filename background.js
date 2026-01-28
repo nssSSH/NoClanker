@@ -1,3 +1,4 @@
+
 // Load blocklist when extension starts
 fetch(chrome.runtime.getURL('blocked.txt'))
   .then(response => response.text())
@@ -11,7 +12,12 @@ fetch(chrome.runtime.getURL('blocked.txt'))
       (details) => {
         const url = new URL(details.url);
         if (blockedSites.includes(url.hostname)) {
-          return { redirectUrl: chrome.runtime.getURL('blocked.html') };
+return {
+  redirectUrl: chrome.runtime.getURL(
+    `blocked.html?url=${encodeURIComponent(details.url)}`
+  )
+};
+
         }
       },
       { urls: ['<all_urls>'] },

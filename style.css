@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300..900&display=swap');
+
+body {
+  font-family: "Albert Sans", sans-serif; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-image: url("more-leaves-on-green.png");
+  background-repeat: repeat(auto-fill);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90%;           
+  max-width: 400px;    
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #333333;           
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+#website-name {
+  color: #800020; /* Highlights the blocked site in your theme color */
+  word-break: break-all;
+}
